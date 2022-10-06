@@ -1,0 +1,33 @@
+GET http://localhost:3000/products/mongo/all
+
+###
+
+GET http://localhost:3000/products/mongo/633e4c84b17e82fca1726182
+
+###
+
+POST http://localhost:3000/products/mongo
+Content-Type: application/json
+
+{
+  "name": "Keyboard electronic",
+  "description": "This is a keyboard electronic",
+  "price": 234.12,
+  "stock": 5
+}
+
+###
+
+PUT http://localhost:3000/products/mongo/633e4c84b17e82fca1726182
+Content-Type: application/json
+
+{
+  "name": "Guitar acoustic updated",
+  "description": "This is a guitar acoustic",
+  "price": 457.24,
+  "stock": 13
+}
+
+###
+
+DELETE http://localhost:3000/products/mongo/633e4c84b17e82fca1726182

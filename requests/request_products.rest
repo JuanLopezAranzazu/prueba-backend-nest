@@ -1,0 +1,33 @@
+GET http://localhost:3000/products
+
+###
+
+GET http://localhost:3000/products/2
+
+###
+
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "name": "Guitar acoustic",
+  "description": "This is a guitar acoustic",
+  "price": 457.24,
+  "stock": 13
+}
+
+###
+
+PUT http://localhost:3000/products/2
+Content-Type: application/json
+
+{
+  "name": "Guitar acoustic",
+  "description": "This is a guitar acoustic",
+  "price": 457.24,
+  "stock": 13
+}
+
+###
+
+DELETE http://localhost:3000/products/2
